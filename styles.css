@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #e0e0e1;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #00030b;
+}
+
+h1,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header h1 {
+    letter-spacing: -2px;
+}
+
+a,
+p,
+h1 span {
+    font-weight: 400;
+}
+
+h1,
+p {
+    color: #a4ceff;
+}
+
+h1 span,
+h3 {
+    color: #fff;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+/* Header Section */
+header {
+    height: 100vh;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+    padding: 30px;
+}
+
+#nav-title {
+    font-size: 3.5rem;
+    padding: 30px;
+    line-height: 3rem;
+}
+
+#nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+#nav-items a {
+    font-size: 2rem;
+    margin: auto;
+    padding: 30px;
+    transition: all .3s linear;
+}
+
+#nav-items a:hover {
+    color: #2176da;
+    text-decoration: underline;
+}
+
+#hero {
+    border: 1px solid #fff;
+    border-left: 0;
+    border-right: 0;
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#hero-title {
+    font-size: 7rem;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    line-height: 6rem;
+    transform: translateY(-50%);
+}
+
+#hero-span-text {
+    font-size: 5.5rem;
+    line-height: 9rem;
+}
+
+#hero-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* Main Section */
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+main h3 {
+    font-size: 4rem;
+    margin-bottom: 10%;
+}
+
+#about-section,
+#technologies-section {
+    width: 50%;
+    padding: 30px;
+}
+
+#about-text-section {
+    display: flex;
+}
+
+#about-text-section p {
+    font-size: 1.2rem;
+    line-height: 1.6em;
+}
+
+.about-text-item {
+    padding-right: 40px;
+}
+
+#tech-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#tech-icons i {
+    font-size: 8rem;
+    margin: 0 75px 30px 0;
+}
+
+#tech-icons i:hover {
+    transform: scale(110%);
+    transition: transform .1s linear;
+}
+
+.fa-html5 {
+    color: #e34c26;
+}
+
+.fa-css3-alt {
+    color: #264de4;
+}
+
+.fa-js {
+    color: #f0db4f;
+}
+
+.fa-git-alt {
+    color: #f1502f;
+}
+
+.fa-npm {
+    color: #cc3534;
+}
+
+.fa-react {
+    color: #61dbfb;
+}
+
+
+/* Footer Section */
+
+footer {
+    background-color: #2176da;
+    height: 30vh;
+    color: #fff;
+    text-align: center;
+    padding: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#link-icons {
+    margin-bottom: 30px;
+}
+
+#link-icons a {
+    color: #e0e0e1;
+    font-size: 3rem;
+    margin: 0 50px;
+}
+
+#footer-text {
+    font-size: 1.2rem;
+    padding: 50px;
+}
