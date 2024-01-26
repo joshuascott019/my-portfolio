@@ -12,6 +12,25 @@ body {
     text-decoration: none;
 }
 
+h1,
+main p,
+nav i {
+    color: #a4ceff;
+}
+
+
+h2,
+h3,
+footer i,
+footer p {
+    color: #fff;
+    font-weight: 400;
+}
+
+footer {
+    background-color: #2176da;
+}
+
 h1 {
     font-weight: 700;
     font-size: 1.8rem;
@@ -23,12 +42,6 @@ h2 {
     font-size: 1.3rem;
 }
 
-h1,
-main p,
-nav i {
-    color: #a4ceff;
-}
-
 p {
     font-size: .85rem;
     line-height: 1.8em;
@@ -38,21 +51,9 @@ p {
     font-size: 3rem;
 }
 
-h2,
-h3,
-footer i,
-footer p {
-    color: #fff;
-    font-weight: 400;
-}
-
 header,
 main {
     margin: 10%;
-}
-
-footer {
-    background-color: #2176da;
 }
 
 
@@ -69,10 +70,13 @@ footer {
     right: 0;
     z-index: 1;
     padding: 5rem 0 0 0;
+    transition: all .3s ease-in;
+    opacity: 1;
 }
 
 #menu-items.hidden {
-    display: none;
+    right: -100%;
+    opacity: 0;
 }
 
 #menu-items li {
@@ -188,4 +192,40 @@ main p {
     text-align: center;
     margin: 0 auto;
     padding: 0 0 20px 0;
+}
+
+@media (min-width: 1025px) {
+    h1 {
+        font-weight: 700;
+        font-size: 1.8rem;
+        letter-spacing: -2px;
+        line-height: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: .85rem;
+        line-height: 1.8em;
+    }
+
+    #tech-section i {
+        font-size: 3rem;
+    }
+
+    header,
+    main {
+        margin: 10%;
+    }
+
+    /* #nav-menu {
+        display: none;
+    }
+
+    #menu-items {
+        display: block;
+    } */
+
 }
