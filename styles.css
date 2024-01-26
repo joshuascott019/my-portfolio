@@ -2,162 +2,148 @@
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-    color: #e0e0e1;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #00030b;
 }
 
-h1,
-h3 {
-    font-family: 'Montserrat', sans-serif;
+#menu-items a {
+    color: #e0e0e1;
+    text-decoration: none;
 }
 
-header h1 {
+h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
     letter-spacing: -2px;
+    line-height: 1.6rem;
 }
 
-a,
-p,
-h1 span {
-    font-weight: 400;
+h2 {
+    font-size: 1.3rem;
 }
 
 h1,
-p {
+main p,
+nav i {
     color: #a4ceff;
 }
 
-h1 span,
-h3 {
-    color: #fff;
+p {
+    font-size: .85rem;
+    line-height: 1.8em;
 }
 
-h3 {
+#tech-section i {
+    font-size: 3rem;
+}
+
+h2,
+h3,
+footer i,
+footer p {
+    color: #fff;
     font-weight: 400;
 }
 
+header,
+main {
+    margin: 10%;
+}
+
+footer {
+    background-color: #2176da;
+}
+
+
 /* Header Section */
+#menu-items {
+    background-color: rgba(0, 0, 0, .85);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 5rem 0 0 0;
+}
+
+#menu-items.hidden {
+    display: none;
+}
+
+#menu-items li {
+    font-size: 1.5rem;
+    margin: 1.8em 2em 0 0;
+    list-style-type: none;
+    width: min-content;
+}
+
 header {
-    height: 100vh;
-}
-
-#navbar {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 10%;
-    padding: 30px;
-}
-
-#nav-title {
-    font-size: 3.5rem;
-    padding: 30px;
-    line-height: 3rem;
-}
-
-#nav-items {
-    display: flex;
-    justify-content: space-evenly;
-    width: 30%;
-}
-
-#nav-items a {
-    font-size: 2rem;
-    margin: auto;
-    padding: 30px;
-    transition: all .3s linear;
-}
-
-#nav-items a:hover {
-    color: #2176da;
-    text-decoration: underline;
-}
-
-#hero {
-    border: 1px solid #fff;
-    border-left: 0;
-    border-right: 0;
-    width: 80%;
-    height: 60%;
-    margin: 0 auto;
     position: relative;
 }
 
-#hero-title {
-    font-size: 7rem;
-    position: absolute;
-    right: 10%;
-    top: 50%;
-    line-height: 6rem;
-    transform: translateY(-50%);
+nav h1 {
+    width: min-content;
+    margin: 10% 0;
 }
 
-#hero-span-text {
-    font-size: 5.5rem;
-    line-height: 9rem;
+#nav-menu i.hidden {
+    display: none;
+}
+
+nav i {
+    font-size: 1.6rem;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 2;
+}
+
+#hero {
+    width: 100%;
+    position: relative;
+    z-index: -2;
+}
+
+#hero-title {
+    position: absolute;
+    width: min-content;
+    top: 50%;
+    right: -10%;
+    transform: translate(-50%, -50%);
 }
 
 #hero-img {
-    width: 100%;
+    border: 2px solid #fff;
+    border-left: 0;
+    border-right: 0;
     height: 100%;
+    width: 100%;
 }
 
 
 
 
 /* Main Section */
-main {
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 75%;
-    margin: 0 auto;
-}
-
 main h3 {
-    font-size: 4rem;
-    margin-bottom: 10%;
+    margin: 50px 0 30px 0;
 }
 
-#about-section,
-#technologies-section {
-    width: 50%;
-    padding: 30px;
+main p {
+    margin: 0 0 30px 0;
 }
 
-#about-text-section {
+#tech-section span {
     display: flex;
+    justify-content: space-between;
 }
 
-#about-text-section p {
-    font-size: 1.2rem;
-    line-height: 1.6em;
-}
-
-.about-text-item {
-    padding-right: 40px;
-}
-
-#tech-icons {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-#tech-icons i {
-    font-size: 8rem;
-    margin: 0 75px 30px 0;
-}
-
-#tech-icons i:hover {
-    transform: scale(110%);
-    transition: transform .1s linear;
+#tech-section {
+    margin-bottom: 150px;
 }
 
 .fa-html5 {
@@ -168,11 +154,11 @@ main h3 {
     color: #264de4;
 }
 
-.fa-js {
+.fa-square-js {
     color: #f0db4f;
 }
 
-.fa-git-alt {
+.fa-square-git {
     color: #f1502f;
 }
 
@@ -185,31 +171,21 @@ main h3 {
 }
 
 
+
+
 /* Footer Section */
-
-footer {
-    background-color: #2176da;
-    height: 30vh;
-    color: #fff;
-    text-align: center;
-    padding: 75px;
+#contact span {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 20px;
 }
 
-#link-icons {
-    margin-bottom: 30px;
+#contact i {
+    font-size: 2rem;
 }
 
-#link-icons a {
-    color: #e0e0e1;
-    font-size: 3rem;
-    margin: 0 50px;
-}
-
-#footer-text {
-    font-size: 1.2rem;
-    padding: 50px;
+#contact p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
 }

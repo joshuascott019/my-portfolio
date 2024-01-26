@@ -15,66 +15,63 @@
 </head>
 
 <body>
+    <ul id="menu-items" class="hidden">
+        <li>
+            <a href="#about-section" class="menu-item">About</a>
+        </li>
+        <li>
+            <a href="#" class="menu-item">Portfolio</a>
+        </li>
+        <li>
+            <a href="#contact" class="menu-item">Contact</a>
+        </li>
+    </ul>
     <header>
-        <nav id="navbar">
-            <div id="nav-hero">
-                <h1 id="nav-title">JOSHUA<br>SCOTT</h1>
-            </div>
-            <div id="nav-items">
-                <a href="#about-section">About</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contact</a>
+        <nav>
+            <h1>JOSHUA SCOTT</h1>
+            <div id="nav-menu">
+                <i id="menuBtn" class="fa-solid fa-bars "></i>
+                <i id="closeBtn" class="fa-solid fa-circle-xmark hidden"></i>
             </div>
         </nav>
         <div id="hero">
-            <h1 id="hero-title"><span id="hero-span-text">Portfolio</span><br>JOSHUA <br> SCOTT</h1>
-            <img src="images/hero img.png" alt="" id="hero-img">
+            <div id="hero-title">
+                <h2>Portfolio</h2>
+                <h1>JOSHUA SCOTT</h1>
+            </div>
+            <img src="images/hero img.png" alt="image of keyboard" id="hero-img">
         </div>
     </header>
     <main>
         <div id="about-section">
             <h3>About</h3>
-            <div id="about-text-section">
-                <p class="about-text-item">Lorem ipsum,<br><br> dolor sit amet, consectetur adipisicing elit. Natus
-                    accusantium vel incidunt culpa
-                    laboriosam
-                    voluptas sunt placeat debitis quasi, maxime, explicabo, numquam quae cupiditate quidem itaque ut
-                    tempora
-                    eligendi enim!</p>
-                <p class="about-text-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quasi
-                    voluptates amet sequi aliquid
-                    quaerat odio aspernatur architecto? Cumque ipsum at accusamus obcaecati! Nesciunt dolorum minima
-                    deleniti harum magnam. Minus!</p>
-            </div>
+            <p>Hello there, <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti corrupti
+                numquam culpa, accusantium itaque. Fugit deleniti distinctio expedita placeat.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur dignissimos officia iure et totam
+                placeat cupiditate veritatis facere quae voluptatum!</p>
         </div>
-        <div id="technologies-section">
+        <div id="tech-section">
             <h3>Technologies</h3>
-            <div id="tech-icons">
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><i
-                        class="fa-brands fa-html5" id="icon-html" title="HTML 5"></i></a>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><i
-                        class="fa-brands fa-css3-alt" id="icon-css" title="CSS 3"></i></a>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i
-                        class="fa-brands fa-js" id="icon-js" title="JavaScript"></i></a>
-                <a href="https://git-scm.com/doc" target="_blank"><i class="fa-brands fa-git-alt" id="icon-git"
-                        title="Git"></i></a>
-                <a href="https://docs.npmjs.com/" target="_blank"><i class="fa-brands fa-npm fa-fade" id="icon-npm"
-                        title="NPM (learning in progress...)"></i></a>
-                <a href="https://react.dev/learn" target="_blank"><i class="fa-brands fa-react fa-fade" id="icon-react"
-                        title="React (learning in progress...)"></i></a>
-            </div>
+            <span>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-square-git"></i>
+                <i class="fa-brands fa-npm fa-fade"></i>
+                <i class="fa-brands fa-react fa-fade"></i>
+            </span>
         </div>
     </main>
-    <footer>
-        <span id="link-icons">
-            <a href="https://www.linkedin.com/in/joshua-scott-295a3b265/" target="_blank" id="profile-link"><i
-                    class="link-icons fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/joshuascott019" target="_blank" id="profile-link"><i
-                    class="link-icons fa-brands fa-github"></i></a>
-            <a href="https://www.freecodecamp.org/Joshua_Scott" target="_blank" id="profile-link"><i
-                    class="link-icons fa-brands fa-free-code-camp"></i></a>
+    <footer id="contact">
+        <span>
+            <a href="https://www.linkedin.com/in/joshua-scott-295a3b265/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/joshuascott019" target="_blank"></a><i class="fa-brands fa-github"></i>
+            <a href="https://www.freecodecamp.org/Joshua_Scott" target="_blank"></a><i
+                class="fa-brands fa-free-code-camp"></i>
         </span>
-        <p id="footer-text">Developed by: <br>Joshua Scott & Monica Marçal(UI/UX)</p>
+        <p>Developed by: Joshua Scott</p>
+        <p>Designed by: Monica Marçal</p>
     </footer>
 
 
