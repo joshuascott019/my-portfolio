@@ -58,7 +58,7 @@ main {
 /* Header Section */
 #menu-items {
     background-color: rgba(0, 0, 0, .85);
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
@@ -115,7 +115,7 @@ nav i {
     position: absolute;
     width: min-content;
     top: 50%;
-    right: -10%;
+    right: -5%;
     transform: translate(-50%, -50%);
 }
 
@@ -189,107 +189,93 @@ main p {
 
 
 
-@media (min-width: 1025px) {
+@media (min-width: 769px) {
     h1 {
-        font-weight: 700;
-        font-size: 1.8rem;
-        letter-spacing: -2px;
-        line-height: 1.6rem;
+        font-size: 3rem;
+        line-height: 3rem;
     }
 
     h2 {
-        font-size: 1.3rem;
-    }
-
-    p {
-        font-size: .85rem;
-        line-height: 1.8em;
-    }
-
-    #tech-section i {
         font-size: 3rem;
     }
 
-    header,
+    p {
+        font-size: 1rem;
+        line-height: 1.5em;
+    }
+
+    #tech-section i {
+        font-size: 4rem;
+        margin: 0 30px 30px 0;
+    }
+
     main {
-        margin: 10%;
+        display: flex;
     }
 
-    /* Header */
-    #menu-items {
-        width: 100%;
-        height: 100%;
-        top: 0;
-        right: 0;
-        padding: 5rem 0 0 0;
-    }
-
-    #menu-items.hidden {
-        right: -100%;
-        opacity: 0;
-    }
-
-    nav i {
-        font-size: 1.6rem;
-        position: absolute;
-        top: 10px;
-        right: 0;
-        z-index: 2;
-    }
-
-    #hero {
-        width: 100%;
-        position: relative;
-        z-index: -2;
-    }
-
-    #hero-title {
-        position: absolute;
-        width: min-content;
-        top: 50%;
-        right: -10%;
-        transform: translate(-50%, -50%);
-    }
-
-    #hero-img {
-        border: 2px solid #fff;
-        border-left: 0;
-        border-right: 0;
-        height: 100%;
-        width: 100%;
-    }
-
-    main h3 {
-        margin: 50px 0 30px 0;
-    }
-
-    main p {
-        margin: 0 0 30px 0;
+    #about-section {
+        width: 50%;
     }
 
     #tech-section span {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
     }
 
     #tech-section {
-        margin-bottom: 150px;
-    }
-
-    /* Footer */
-    #contact span {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 40px 20px;
+        width: 50%;
+        margin-bottom: 0;
     }
 
     #contact i {
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 5rem;
+        line-height: 4.5rem;
     }
 
-    #contact p {
-        text-align: center;
-        margin: 0 auto;
-        padding: 0 0 20px 0;
+    h2 {
+        font-size: 3rem;
     }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5em;
+    }
+
+    #tech-section i {
+        font-size: 4rem;
+        margin: 0 30px 30px 0;
+    }
+
+    main {
+        display: flex;
+    }
+
+    #about-section {
+        width: 50%;
+    }
+
+    #tech-section span {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    #tech-section {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    #contact i {
+        font-size: 3rem;
+    }
+
 }
