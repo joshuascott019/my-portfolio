@@ -2,147 +2,170 @@
     margin: 0;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #00030b;
+:root {
+    --primary-bg-color: #00030b;
+    --secondary-bg-color: #2176da;
+    --primary-font-color: #a4ceff;
+    --secondary-font-color: #fff;
+    --tertiary-font-color: #e0e0e1;
 }
 
-#menu-items a {
-    color: #e0e0e1;
+body {
+    background-color: var(--primary-bg-color);
+    font-family: "Montserrat", 'Times New Roman', Times, serif;
+}
+
+a {
     text-decoration: none;
 }
 
 h1,
-main p,
+p,
 nav i {
-    color: #a4ceff;
+    color: var(--primary-font-color);
 }
 
 h2,
 h3,
-footer i,
+i,
 footer p {
-    color: #fff;
+    color: var(--secondary-font-color);
     font-weight: 400;
 }
 
-footer {
-    background-color: #2176da;
+#menu-items a {
+    color: var(--tertiary-font-color);
 }
 
-h1 {
-    font-weight: 700;
-    font-size: 1.8rem;
-    letter-spacing: -2px;
-    line-height: 1.6rem;
-}
 
-h2 {
-    font-size: 1.3rem;
-}
-
-p {
-    font-size: .85rem;
-    line-height: 1.8em;
-}
-
-#tech-section i {
-    font-size: 3rem;
-}
-
-header,
-main {
-    margin: 10%;
-}
 
 /* Header Section */
-#menu-items {
-    background-color: rgba(0, 0, 0, .85);
-    display: none;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    padding: 5rem 0 0 0;
-    transition: all .3s ease-in;
-    opacity: 1;
-}
-
-#menu-items.hidden {
-    right: -100%;
-    opacity: 0;
-}
-
-#menu-items li {
-    font-size: 1.5rem;
-    margin: 1.8em 2em 0 0;
-    list-style-type: none;
-    width: min-content;
-}
-
 header {
-    position: relative;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
 }
 
-nav h1 {
-    width: min-content;
-    margin: 10% 0;
-}
-
-#nav-menu i.hidden {
-    display: none;
-}
-
-nav i {
-    font-size: 1.6rem;
-    position: absolute;
-    top: 10px;
-    right: 0;
-    z-index: 2;
-}
-
-#hero {
-    width: 100%;
-    position: relative;
-    z-index: -2;
-}
-
-#hero-title {
-    position: absolute;
-    width: min-content;
-    top: 50%;
-    right: -5%;
-    transform: translate(-50%, -50%);
-}
-
-#hero-img {
-    border: 2px solid #fff;
-    border-left: 0;
-    border-right: 0;
-    height: 100%;
-    width: 100%;
-}
-
-/* Main Section */
-main h3 {
-    margin: 50px 0 30px 0;
-}
-
-main p {
-    margin: 0 0 30px 0;
-}
-
-#tech-section span {
+nav {
     display: flex;
     justify-content: space-between;
 }
 
+nav h1 {
+    font-size: 4rem;
+    letter-spacing: -4px;
+    line-height: .85em;
+    padding: 50px;
+}
+
+#nav-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menuBtn,
+#closeBtn {
+    position: absolute;
+    display: none;
+}
+
+#menu-items {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: right;
+}
+
+#menu-items a {
+    font-size: 2rem;
+    margin: Auto 40px;
+}
+
+nav h1,
+#hero-title h1 {
+    width: min-content;
+}
+
+#hero {
+    position: relative;
+}
+
+#hero-title {
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    font-size: 3.8rem;
+    letter-spacing: -10px;
+    line-height: 1.8em;
+    transform: translate(-50%, -50%);
+}
+
+#hero-title h2 {
+    margin: 0 0 10px 0;
+    letter-spacing: -2px;
+}
+
+#hero-img {
+    height: 600px;
+    width: 100%;
+    border: 2px solid #fff;
+    border-left: 0;
+    border-right: 0;
+    overflow: hidden;
+}
+
+
+
+/* Main Section */
+main {
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+#about-section,
 #tech-section {
-    margin-bottom: 150px;
+    width: 40%;
+    height: 60%;
+    margin: auto 0;
+}
+
+main h3 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 0 0 75px 0;
+}
+
+#about-section h3 {
+    width: 100%;
+}
+
+#about-text {
+    display: flex;
+}
+
+#about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    padding-right: 50px;
+}
+
+#tech-section span {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+#tech-section span i {
+    font-size: 6rem;
+    margin: 0 50px 50px 0;
 }
 
 .fa-html5 {
@@ -154,128 +177,44 @@ main p {
 }
 
 .fa-square-js {
-    color: #f0db4f;
+    color: #F0DB4F;
 }
 
 .fa-square-git {
-    color: #f1502f;
+    color: #F1502F;
 }
 
 .fa-npm {
-    color: #cc3534;
+    color: #CC3534;
 }
 
 .fa-react {
     color: #61dbfb;
 }
 
+
+
 /* Footer Section */
-#contact span {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 40px 20px;
-}
 
-#contact i {
-    font-size: 2rem;
-}
-
-#contact p {
+footer {
+    height: 30vh;
+    background-color: var(--secondary-bg-color);
     text-align: center;
+}
+
+footer span {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin: 0 auto;
-    padding: 0 0 20px 0;
 }
 
-
-
-
-@media (min-width: 769px) {
-    h1 {
-        font-size: 3rem;
-        line-height: 3rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-
-    p {
-        font-size: 1rem;
-        line-height: 1.5em;
-    }
-
-    #tech-section i {
-        font-size: 4rem;
-        margin: 0 30px 30px 0;
-    }
-
-    main {
-        display: flex;
-    }
-
-    #about-section {
-        width: 50%;
-    }
-
-    #tech-section span {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-
-    }
-
-    #tech-section {
-        width: 50%;
-        margin-bottom: 0;
-    }
-
-    #contact i {
-        font-size: 3rem;
-    }
+footer span i {
+    font-size: 4rem;
+    margin: 40px 0;
 }
 
-@media (min-width: 1024px) {
-    h1 {
-        font-size: 5rem;
-        line-height: 4.5rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-
-    p {
-        font-size: 1rem;
-        line-height: 1.5em;
-    }
-
-    #tech-section i {
-        font-size: 4rem;
-        margin: 0 30px 30px 0;
-    }
-
-    main {
-        display: flex;
-    }
-
-    #about-section {
-        width: 50%;
-    }
-
-    #tech-section span {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-
-    }
-
-    #tech-section {
-        width: 50%;
-        margin-bottom: 0;
-    }
-
-    #contact i {
-        font-size: 3rem;
-    }
-
+footer p {
+    margin: 30px;
 }
