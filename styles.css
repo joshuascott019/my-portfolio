@@ -37,8 +37,6 @@ footer p {
     color: var(--tertiary-font-color);
 }
 
-
-
 /* Header Section */
 header {
     width: 80%;
@@ -67,7 +65,7 @@ nav h1 {
 
 #menuBtn,
 #closeBtn {
-    position: absolute;
+    font-size: 2rem;
     display: none;
 }
 
@@ -116,10 +114,9 @@ nav h1,
     border: 2px solid #fff;
     border-left: 0;
     border-right: 0;
-    overflow: hidden;
+    margin: auto;
+    object-fit: cover;
 }
-
-
 
 /* Main Section */
 main {
@@ -192,10 +189,7 @@ main h3 {
     color: #61dbfb;
 }
 
-
-
 /* Footer Section */
-
 footer {
     height: 30vh;
     background-color: var(--secondary-bg-color);
@@ -216,5 +210,170 @@ footer span i {
 }
 
 footer p {
-    margin: 30px;
+    margin: 10px 0 30px 0;
+}
+
+
+/* Laptops & smaller screens */
+@media (min-width:769px) and (max-width: 1200px) {
+    nav h1 {
+        font-size: 2.5rem;
+        padding: 40px;
+    }
+
+    #menu-items a {
+        font-size: 1.5rem;
+        margin: Auto 15px;
+    }
+
+    #hero-title {
+        font-size: 2.8rem;
+    }
+
+    #hero-title h2 {
+        margin: 0 0 10px 0;
+        letter-spacing: -2px;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    #about-section,
+    #tech-section {
+        height: 90%;
+    }
+
+    main h3 {
+        font-size: 2.4rem;
+    }
+
+    #about-text {
+        flex-direction: column;
+    }
+
+    #about-text p {
+        font-size: 1rem;
+        line-height: 1.8em;
+        padding-right: 20px;
+        margin-bottom: 15px;
+    }
+
+    #tech-section span i {
+        font-size: 4rem;
+        margin: 0 30px 30px 0;
+    }
+
+    footer span i {
+        font-size: 3rem;
+        margin: 40px 0;
+    }
+
+    footer p {
+        margin: 10px 0 30px 0;
+    }
+}
+
+/* Tablets (min-width:481px) and */
+@media (max-width: 768px) {
+    header {
+        height: 80vh;
+    }
+
+    nav h1 {
+        font-size: 2.2rem;
+        padding: 30px;
+        letter-spacing: -1px;
+    }
+
+    #nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        z-index: 1;
+    }
+
+    #nav-menu.active {
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+    #menuBtn,
+    #closeBtn {
+        display: block;
+        margin: 50px 0 0 0;
+        z-index: 2;
+    }
+
+    #menu-items {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        display: none;
+    }
+
+    #menu-items.active {
+        display: flex;
+    }
+
+
+    #menu-items a:first-of-type {
+        font-size: 1.3rem;
+        margin: 150px 10% 0 0;
+    }
+
+    #menu-items a:not(:first-child) {
+        font-size: 1.3rem;
+        margin: 50px 10% 0 0;
+    }
+
+    #hero-title {
+        font-size: 1.8rem;
+        letter-spacing: -4px;
+    }
+
+    main {
+        height: 90vh;
+    }
+
+    #about-section,
+    #tech-section {
+        height: 80%;
+        margin: auto;
+    }
+
+    main h3 {
+        font-size: 1.5rem;
+        margin: 0 0 30px 0;
+    }
+
+    #about-text {
+        flex-direction: column;
+    }
+
+    #about-text p {
+        font-size: .95rem;
+        line-height: 1.5em;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+
+    #tech-section span i {
+        font-size: 3.5rem;
+        margin: 0 20px 20px 0;
+    }
+
+    footer span i {
+        font-size: 2.5rem;
+    }
+
+    footer p {
+        font-size: .8rem;
+    }
+
 }
