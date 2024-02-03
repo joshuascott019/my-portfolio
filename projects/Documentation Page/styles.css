@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #27374D;
+}
+
+section {
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    border-bottom: 2px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1;
+    background-color: #526D82;
+    color: #DDE6ED;
+}
+
+#doc-title {
+    margin: 0;
+    font-size: 1.5rem;
+    /* padding: 15px 28px; */
+}
+
+a {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.3rem;
+    background-color: #5f7f97;
+    
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #DDE6ED;
+}
+
+a:hover {
+    color: #526D82;
+    background-color: #DDE6ED;
+}
+
+#doc-title, a {
+    border-right: 1px solid black;
+    padding: 15px 28px;
+
+}
+
+#main-doc {
+    position: absolute;
+    top: 55px;
+    width: fit-content;
+    padding: 50px 100px;
+    background-color: #9DB2BF;
+    margin: 30px;
+}
+
+section header {
+    font-size: 1.8rem;
+}
+
+section p {
+    margin: 15px 30px;
+}
+
+ul {
+    margin: 10px 60px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #DDE6ED;
+    padding: 15px;
+    margin: 10px 45px;
+    border-radius: 5px;
+}
+
+@media (min-width:1281px) {
+    #navbar {
+        position: fixed;
+        min-width: 280px;
+        top: 0px;
+        left: 0px;
+        width: fit-content;
+        height: 100%;
+        border-right: 2px solid black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #doc-title,
+    a {
+        border-bottom: 1px solid black;
+        border-right: none;
+        margin: 0;
+        padding: 15px 0 ;
+    }
+
+    #main-doc {
+        position: absolute;
+        margin-left: 310px;
+        top: 0;
+    }
+}

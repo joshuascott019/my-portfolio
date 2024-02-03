@@ -1,0 +1,73 @@
+body {
+    background-color: #F8F6F4;
+    text-align: center;
+    margin: 0;
+    min-width: fit-content;
+}
+p, ul, li {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+#main {
+    background-color: #9DB2BF;
+    margin: 30px;
+    min-width: fit-content;
+}
+#title {
+    font-size: 3.5rem;
+    padding: 60px 0 30px;
+}
+#header {
+    background-color: #DDE6ED;
+    margin: 50px;
+    max-width: 90%;
+    min-width: fit-content;
+    margin: 0 auto;
+    padding: 70px 0 50px;
+}
+#tribute-description {
+    margin: 50px auto;
+    width: 75%;
+}
+#feats-section {
+    margin: 0 auto;
+    width: 60%;
+}
+#feats-section-title {
+    margin: 50px auto;
+}
+#feats-title, #feat {
+    text-align: left;
+}
+#feats-title {
+    margin-top: 75px;
+}
+#feat {
+    width: 80%;
+    margin: 20px auto;
+}
+#more-about {
+    padding: 100px;
+}
+
+@media (max-width: 790px) {
+    #tribute-img {
+        width: 80%;
+    }
+}
+@media (max-width: 550px) {
+    #feats-section {
+        width: 80%;
+    }
+}
+
+@media (max-width: 375px) {
+    #title {
+        font-size: 2.5rem;
+    }
+    #feats-section {
+        width: 100%;
+    }
+}

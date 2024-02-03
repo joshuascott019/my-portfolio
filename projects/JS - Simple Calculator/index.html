@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <metaewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Calculator</title>
+</head>
+
+<body>
+    <div id="calculator">
+        <div id="screen-section">
+            <span id="mem"></span>
+            <span id="display">0</span>
+        </div>
+        <div id="input-section">
+            <table>
+                <tr>
+                    <td><button id="btnClear">CE</button></td>
+                    <td><button id="btnClearAll">C</button></td>
+                    <td colspan="2"><button id="btnBackspace">Backspace</button></td>
+                </tr>
+                <tr>
+                    <td><button id="btn7" value="7">7</button></td>
+                    <td><button id="btn8" value="8">8</button></td>
+                    <td><button id="btn9" value="9">9</button></td>
+                    <td><button id="btnDivide" value="/">/</button></td>
+                </tr>
+                <tr>
+                    <td><button id="btn4" value="4">4</button></td>
+                    <td><button id="btn5" value="5">5</button></td>
+                    <td><button id="btn6" value="6">6</button></td>
+                    <td><button id="btnMultiply" value="*">*</button></td>
+                </tr>
+                <tr>
+                    <td><button id="btn1" value="1">1</button></td>
+                    <td><button id="btn2" value="2">2</button></td>
+                    <td><button id="btn3" value="3">3</button></td>
+                    <td><button id="btnSubtract" value="-">-</button></td>
+                </tr>
+                <tr>
+                    <td><button id="btn0" value="0">0</button></td>
+                    <td><button id="btnPeriod">.</button></td>
+                    <td><button id="btnEqual">=</button></td>
+                    <td><button id="btnAdd" value="+">+</button></td>
+                </tr>
+                <!--JS Console.log Btn-->
+                <tr>
+                    <td><button id="btnTest" class="test">Console<br>Log<br>(Debug)</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>

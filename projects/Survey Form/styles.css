@@ -1,0 +1,65 @@
+/* General Tags */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #990000;
+    color: white;
+}
+input, textarea {
+    background-color: #750000;
+    color: white;
+}
+input[type="radio"], input[type="checkbox"] {
+    display: inline-block;
+}
+label {
+    display: block;
+}
+fieldset {
+    border: none;
+    padding: 1.5em 2em;
+}
+form {
+    margin: 50px auto;
+    max-width: 650px;
+    min-width: 200px;
+    border: 1px solid white;
+    padding: 1.5em;
+}
+fieldset:first-of-type {
+    padding: 0 auto;
+}
+p, input {
+    margin: 7px 5px 5px 0;
+}
+select {
+    margin-top: 5px;
+}
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1rem;
+    min-width: 300px;
+}
+textarea {
+    width: 100%;
+}
+
+/* Custom ID's & Classes */
+#title {
+    font-family: "Roboto";
+    font-size: 3rem;
+}
+#survey-heading {
+    text-align: center;
+}
+.max-input-width {
+    width: 100%;
+}
+.identity {
+    margin: 20px auto;
+}
+
+
+

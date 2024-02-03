@@ -28,7 +28,8 @@ nav i {
 h2,
 h3,
 i,
-footer p {
+footer p,
+small {
     color: var(--secondary-font-color);
     font-weight: 400;
 }
@@ -42,6 +43,10 @@ header {
     width: 80%;
     height: 100vh;
     margin: 0 auto;
+}
+
+header.portfolio {
+    height: auto;
 }
 
 nav {
@@ -91,6 +96,9 @@ nav h1,
 
 #hero {
     position: relative;
+    border: 2px solid #fff;
+    border-left: 0;
+    border-right: 0;
 }
 
 #hero-title {
@@ -111,9 +119,6 @@ nav h1,
 #hero-img {
     height: 600px;
     width: 100%;
-    border: 2px solid #fff;
-    border-left: 0;
-    border-right: 0;
     margin: auto;
     object-fit: cover;
 }
@@ -134,6 +139,12 @@ main {
     margin: auto 0;
 }
 
+#portfolio-section {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+}
+
 main h3 {
     font-size: 3.5rem;
     font-weight: 400;
@@ -142,6 +153,10 @@ main h3 {
 
 #about-section h3 {
     width: 100%;
+}
+
+#portfolio-section h3 {
+    margin: 0;
 }
 
 #about-text {
@@ -162,7 +177,12 @@ main h3 {
 
 #tech-section span i {
     font-size: 6rem;
+}
+
+#tech-section span small {
+    width: min-content;
     margin: 0 50px 50px 0;
+    text-align: center;
 }
 
 .fa-html5 {
@@ -187,6 +207,45 @@ main h3 {
 
 .fa-react {
     color: #61dbfb;
+}
+
+#portfolio-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 200px;
+    height: 250px;
+    background-color: var(--secondary-font-color);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px;
+}
+
+.portfolio-item:hover {
+    transform: translate(-10px, -10px);
+}
+
+.portfolio-item:active {
+    transform: scale(.98) translate(-10px, -10px);
+}
+
+.portfolio-item p {
+    color: #000;
+    padding: 10px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
 }
 
 /* Footer Section */
@@ -237,11 +296,14 @@ footer p {
 
     main {
         height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     #about-section,
     #tech-section {
-        height: 90%;
+        width: 80%;
     }
 
     main h3 {
@@ -261,6 +323,9 @@ footer p {
 
     #tech-section span i {
         font-size: 4rem;
+    }
+
+    #tech-section span small {
         margin: 0 30px 30px 0;
     }
 
@@ -337,13 +402,20 @@ footer p {
         letter-spacing: -4px;
     }
 
+    #hero-img {
+        height: 450px;
+    }
+
     main {
-        height: 90vh;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     #about-section,
     #tech-section {
-        height: 80%;
+        width: 80%;
         margin: auto;
     }
 
@@ -365,6 +437,9 @@ footer p {
 
     #tech-section span i {
         font-size: 3.5rem;
+    }
+
+    #tech-section span small {
         margin: 0 20px 20px 0;
     }
 

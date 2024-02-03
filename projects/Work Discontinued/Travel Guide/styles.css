@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: orange;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+
+/* HEADER SECTION */
+#header-section {
+    text-align: center;
+    background: linear-gradient(lightblue, green, orange);
+}
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+#nav-link {
+    color: black;
+    font-size: 1.1rem;
+    margin: 10px 30px;
+}
+#title {
+    font-size: 1.7rem;
+    margin: 75px 0 0 0;
+}
+#city-name {
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+#city-logo {
+    aspect-ratio: 1/1;
+    width: 20%;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+
+/* INFO SECTION */
+#tabs-bar {
+    width: min-content;
+    
+}
+#tab-link {
+    font-size: 1.3rem;
+    color: black;
+    background-color: lightgrey;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 15px 15px 0 0;
+    padding: 10px 20px 3px;
+}
+#attractions-library {
+    border-top: 2px solid black;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+#attractions-item {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+#attractions-img {
+    width: 20%;
+    margin-right: 10px;
+}
+#attractions-title {
+
+}
+#attractions-details {
+}

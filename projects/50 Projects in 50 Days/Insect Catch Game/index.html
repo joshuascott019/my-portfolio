@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+  <link rel="stylesheet" href="styles.css" />
+  <title>Catch the Insect</title>
+</head>
+
+<body>
+  <div class="screen">
+    <h1>Catch The Insect</h1>
+    <button class="btn" id="start-btn">Play Game</button>
+  </div>
+
+  <div class="screen">
+    <h1>Select Opponent</h1>
+    <ul class="insects-list">
+      <li>
+        <button class="choose-insect-btn">
+          <p>Fly</p>
+          <img src="images/fly v0.2.png" alt="Fly">
+        </button>
+      </li>
+      <li>
+        <button class="choose-insect-btn">
+          <p>Mosquito</p>
+          <img src="images/mosquito v0.2.png" alt="mosquito" />
+        </button>
+      </li>
+      <li>
+        <button class="choose-insect-btn">
+          <p>Spider</p>
+          <img src="images/spider v0.2.png" alt="spider" />
+        </button>
+      </li>
+      <li>
+        <button class="choose-insect-btn">
+          <p>Roach</p>
+          <img src="images/cockroach v0.2.png" alt="roach" />
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="screen game-container" id="game-container">
+    <h3 id="time">Time: 00:00</h3>
+    <h3 id="score">Score: 0</h3>
+    <h5 id="message" class="">
+      Are you annoyed yet? <br>
+      You are playing an impossible game!!
+    </h5>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

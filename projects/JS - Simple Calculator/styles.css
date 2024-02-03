@@ -1,0 +1,28 @@
+#screen-section {
+    width: 315px;
+    height: 75px;
+    border: 2px solid black;
+}
+
+#display {
+    font-size: 2.5rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#mem {
+    text-align: right;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+button {
+    padding: 10px;
+    height: 75px;
+    width: 75px;
+}
+
+#btnBackspace {
+    width: 155px;
+}

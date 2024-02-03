@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div id="survey-heading">
+        <h1 id="title">Pizza Survey</h1>
+        <p id="description">Please tell us about your preferrences for pizza in the following survey.</p>
+    </div>
+    <form id="survey-form" action="">
+        <fieldset>
+            <label class="identity" id="name-label" for="">Name <input id="name" class="max-input-width" type="text" placeholder="Tony Pizza" required></label>
+            <label class="identity" id="email-label" for="">Email <input id="email" class="max-input-width" type="email" placeholder="tonypizza@theslice.yum" required></label>
+            <label class="identity" id="number-label" for="">Age <em>(optional)</em><input id="number" class="max-input-width" type="number" min="13" max="120" placeholder="age"></label>
+        </fieldset>
+        <fieldset>
+            <p>What is your favorite pizza franchize?</p>
+            <label for="">
+                <select name="" id="dropdown" required>
+                    <option value="">(select one)</option>
+                    <option value="">Pizza Hut</option>
+                    <option value="">Papa Johns</option>
+                    <option value="">Zito's Pizza</option>
+                    <option value="">Dominoes</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <p>Favorite type of crust?</p>
+            <label for=""><input type="radio" name="radio-buttons" value="1" required>Regular</label>
+            <label for=""><input type="radio" name="radio-buttons" value="2" required>Stuffed</label>
+            <label for=""><input type="radio" name="radio-buttons" value="3" required>No Crust</label>
+        </fieldset>
+        <fieldset>
+            <p>What are your preferred toppings? <em>(select all that apply)</em></p>
+            <label for=""><input type="checkbox" value="1" name="toppings">Peperoni</label>
+            <label for=""><input type="checkbox" value="2" name="toppings">Sausage</label>
+            <label for=""><input type="checkbox" value="3" name="toppings">Mushrooms</label>
+            <label for=""><input type="checkbox" value="4" name="toppings">Olives</label>
+            <label for=""><input type="checkbox" value="5" name="toppings">Bell Peppers</label>
+            <label for=""><input type="checkbox" value="6" name="toppings">Onions</label>
+            <label for=""><input type="checkbox" value="7" name="toppings">Pineapple</label>
+        </fieldset>
+        <fieldset>
+            <p>Comments on Pizza: <em>(optional)</em></p>
+            <textarea name="" id="" cols="80" rows="10" placeholder="I love pinapple pizza!"></textarea>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>
