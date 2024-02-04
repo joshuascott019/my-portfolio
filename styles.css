@@ -125,10 +125,11 @@ nav h1,
 
 /* Main Section */
 main {
-    height: 100vh;
+    height: min-content;
     width: 80%;
     display: flex;
     justify-content: space-evenly;
+    align-items: flex-start;
     margin: 0 auto;
 }
 
@@ -136,13 +137,14 @@ main {
 #tech-section {
     width: 40%;
     height: 60%;
-    margin: auto 0;
+    margin: 100px 0;
 }
 
 #portfolio-section {
     width: 90%;
-    height: 80%;
+    height: 90%;
     margin: auto;
+    padding: 50px;
 }
 
 main h3 {
@@ -211,13 +213,15 @@ main h3 {
 
 #portfolio-list {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .portfolio-item {
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 300px;
     background-color: var(--secondary-font-color);
     border-radius: 10px;
     text-align: center;
@@ -225,7 +229,7 @@ main h3 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 60px;
+    margin: 40px;
 }
 
 .portfolio-item:hover {
@@ -295,15 +299,17 @@ footer p {
     }
 
     main {
-        height: 100vh;
+        /* height: 100vh; */
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 25px 0;
     }
 
     #about-section,
     #tech-section {
         width: 80%;
+        margin: 50px 0;
     }
 
     main h3 {
@@ -407,16 +413,17 @@ footer p {
     }
 
     main {
-        height: 100vh;
+        /* height: 100vh; */
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 25px 0;
     }
 
     #about-section,
     #tech-section {
         width: 80%;
-        margin: auto;
+        margin: 25px 0;
     }
 
     main h3 {
