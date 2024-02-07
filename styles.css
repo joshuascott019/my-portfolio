@@ -254,6 +254,10 @@ main h3 {
     object-fit: cover;
 }
 
+.portfolio-item img.fill {
+    object-fit: fill;
+}
+
 /* Footer Section */
 footer {
     height: 30vh;
