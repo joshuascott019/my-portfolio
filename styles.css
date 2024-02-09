@@ -38,7 +38,10 @@ small {
     color: var(--tertiary-font-color);
 }
 
-/* Header Section */
+
+/* ======================== */
+/* ---- HEADER SECTION ---- */
+/* ======================== */
 header {
     width: 80%;
     height: 100vh;
@@ -123,7 +126,10 @@ nav h1,
     object-fit: cover;
 }
 
-/* Main Section */
+
+/* ======================== */
+/* ----- MAIN SECTION ----- */
+/* ======================== */
 main {
     height: min-content;
     width: 80%;
@@ -143,7 +149,6 @@ main {
 #portfolio-section {
     width: 100%;
     height: 90%;
-    margin: auto;
     padding: 50px;
 }
 
@@ -165,6 +170,7 @@ main h3 {
     font-size: 1.2rem;
     line-height: 1.6em;
     padding-right: 50px;
+    width: 50%;
 }
 
 #tech-section span {
@@ -225,40 +231,43 @@ main h3 {
     align-items: center;
     margin: 10px;
     width: 30%;
-    height: 400px;
+    aspect-ratio: 1/1;
     overflow: hidden;
 }
 
-/* .portfolio-item:hover {
-    transform: translate(-10px, -10px);
-}
-
-.portfolio-item:active {
-    transform: scale(.98) translate(-10px, -10px);
-} */
-
-.portfolio-item p {
-    color: #000;
-    padding: 10px;
-}
-
-.portfolio-item iframe {
+/* .portfolio-item iframe {
     width: 101%;
     height: 90%;
     border-radius: 10px 10px 0 0;
+} */
+
+.portfolio-item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .portfolio-item img {
     width: 100%;
     height: 90%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .portfolio-item img.fill {
     object-fit: fill;
 }
 
-/* Footer Section */
+.portfolio-item p {
+    color: #000;
+    padding: 10px;
+}
+
+
+/* =========================== */
+/* ----- FOOTER SECTION ----- */
+/* =========================== */
 footer {
     height: 30vh;
     background-color: var(--secondary-bg-color);
@@ -305,7 +314,6 @@ footer p {
     }
 
     main {
-        /* height: 100vh; */
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -315,7 +323,11 @@ footer p {
     #about-section,
     #tech-section {
         width: 80%;
-        margin: 50px 0;
+        margin: 0 0 50px 0;
+    }
+
+    #portfolio-section {
+        padding: 25px 0;
     }
 
     main h3 {
@@ -331,6 +343,7 @@ footer p {
         line-height: 1.8em;
         padding-right: 20px;
         margin-bottom: 15px;
+        width: 75%;
     }
 
     #tech-section span i {
@@ -419,7 +432,6 @@ footer p {
     }
 
     main {
-        /* height: 100vh; */
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -429,7 +441,7 @@ footer p {
     #about-section,
     #tech-section {
         width: 80%;
-        margin: 25px 0;
+        margin: 0 0 50px 0;
     }
 
     main h3 {
@@ -446,6 +458,7 @@ footer p {
         line-height: 1.5em;
         padding-right: 0;
         margin-bottom: 15px;
+        width: 75%;
     }
 
     #tech-section span i {
@@ -460,11 +473,6 @@ footer p {
         width: 200px;
         height: 250px;
     }
-
-    /* .portfolio-item img {
-        width: 200px;
-        height: 200px;
-    } */
 
     footer span i {
         font-size: 2.5rem;
