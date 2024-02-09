@@ -92,6 +92,10 @@ nav h1 {
     margin: Auto 40px;
 }
 
+#menu-items a:hover {
+    color: var(--secondary-bg-color);
+}
+
 nav h1,
 #hero-title h1 {
     width: min-content;
@@ -233,6 +237,11 @@ main h3 {
     width: 30%;
     aspect-ratio: 1/1;
     overflow: hidden;
+    transition: all .2s linear;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.1);
 }
 
 /* .portfolio-item iframe {
@@ -277,14 +286,14 @@ footer {
 footer span {
     width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
 
 footer span i {
     font-size: 4rem;
-    margin: 40px 0;
+    margin: 40px 30px;
 }
 
 footer p {
@@ -294,6 +303,10 @@ footer p {
 
 /* Laptops & smaller screens */
 @media (min-width:769px) and (max-width: 1200px) {
+    header {
+        height: 75vh;
+    }
+
     nav h1 {
         font-size: 2.5rem;
         padding: 40px;
@@ -311,6 +324,13 @@ footer p {
     #hero-title h2 {
         margin: 0 0 10px 0;
         letter-spacing: -2px;
+    }
+
+    #hero-img {
+        height: 450px;
+        /* width: 100%;
+        margin: auto;
+        object-fit: cover; */
     }
 
     main {
@@ -348,6 +368,7 @@ footer p {
 
     #tech-section span i {
         font-size: 4rem;
+        margin: 15px;
     }
 
     #tech-section span small {
@@ -356,7 +377,6 @@ footer p {
 
     footer span i {
         font-size: 3rem;
-        margin: 40px 0;
     }
 
     footer p {
@@ -367,7 +387,7 @@ footer p {
 /* Tablets (min-width:481px) and */
 @media (max-width: 768px) {
     header {
-        height: 80vh;
+        height: 55vh;
     }
 
     nav h1 {
@@ -428,7 +448,7 @@ footer p {
     }
 
     #hero-img {
-        height: 450px;
+        height: 300px;
     }
 
     main {
@@ -476,6 +496,7 @@ footer p {
 
     footer span i {
         font-size: 2.5rem;
+        margin: 40px 15px;
     }
 
     footer p {
