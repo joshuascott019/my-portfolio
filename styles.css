@@ -38,6 +38,11 @@ small {
     color: var(--tertiary-font-color);
 }
 
+.hidden {
+    display: none;
+    transition: all 1s linear;
+}
+
 
 /* ======================== */
 /* ---- HEADER SECTION ---- */
