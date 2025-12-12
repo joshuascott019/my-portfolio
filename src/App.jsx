@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
-import Home from './pages/Home.jsx';
-import About from './pages/About.jsx';
-import Contact from './pages/Contact.jsx';
-import Portfolio from './pages/Portfolio.jsx';
-import NotFound from './pages/NotFound.jsx';
-import NavBar from './components/NavBar.jsx';
-import Hero from './components/Hero.jsx';
-import Footer from './components/Footer.jsx';
+import HomePage from './pages/HomePage.jsx';
+import AboutPage from './pages/AboutPage.jsx';
+import ContactPage from './pages/ContactPage.jsx';
+import PortfolioPage from './pages/PortfolioPage.jsx';
+import NotFoundPage from './pages/NotFoundPage.jsx';
+import NavBar from './components/UI/NavBar.jsx';
+import Hero from './components/UI/Hero.jsx';
+import Footer from './components/UI/Footer.jsx';
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -15,15 +15,15 @@ const App = () => {
   const renderPage = () => {
     switch (currentPage) {
       case 'Home':
-        return <Home />;
+        return <HomePage />;
       case 'About':
-        return <About />;
+        return <AboutPage />;
       case 'Contact':
-        return <Contact />;
+        return <ContactPage />;
       case 'Portfolio':
-        return <Portfolio />;
+        return <PortfolioPage />;
       default:
-        return <NotFound />;
+        return <NotFoundPage />;
     }
   };
 
