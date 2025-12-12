@@ -1,4 +1,10 @@
+import CardList from '../components/CardList.jsx';
+
 const PortfolioPage = () => {
-  return <div>PortfolioPage</div>;
+  return (
+    <div>
+      <CardList />
+    </div>
+  );
 };
 export default PortfolioPage;

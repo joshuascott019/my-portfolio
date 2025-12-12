@@ -1,1 +1,46 @@
-[]
+{
+  "frontend": [
+    {
+      "id": 0,
+      "name": "Project Name",
+      "link": "[project link]",
+      "repoLink": "[repo link]",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "date": "[date]",
+      "img": "[image]"
+    }
+  ],
+  "backend": [
+    {
+      "id": 0,
+      "name": "Project Name",
+      "link": "[project link]",
+      "repoLink": "[repo link]",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "date": "[date]",
+      "img": "[image]"
+    }
+  ],
+  "fullstack": [
+    {
+      "id": 0,
+      "name": "Project Name",
+      "link": "[project link]",
+      "repoLink": "[repo link]",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "date": "[date]",
+      "img": "[image]"
+    }
+  ],
+  "other": [
+    {
+      "id": 0,
+      "name": "Project Name",
+      "link": "[project link]",
+      "repoLink": "[repo link]",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "date": "[date]",
+      "img": "[image]"
+    }
+  ]
+}
