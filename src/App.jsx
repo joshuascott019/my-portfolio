@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import HomePage from './pages/HomePage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
@@ -10,30 +10,19 @@ import Hero from './components/UI/Hero.jsx';
 import Footer from './components/UI/Footer.jsx';
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState('Home');
-
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'Home':
-        return <HomePage />;
-      case 'About':
-        return <AboutPage />;
-      case 'Contact':
-        return <ContactPage />;
-      case 'Portfolio':
-        return <PortfolioPage />;
-      default:
-        return <NotFoundPage />;
-    }
-  };
-
   return (
-    <div>
-      <NavBar setCurrentPage={setCurrentPage} />
+    <Router>
+      <NavBar />
       <Hero />
-      {renderPage()}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 };
 export default App;

@@ -1,14 +1,16 @@
-const NavBar = ({ setCurrentPage }) => {
+import { Link } from 'react-router-dom';
+
+const NavBar = () => {
   return (
     <div>
       <div>
         <h3>Lorem Ipsum</h3>
       </div>
       <div>
-        <button onClick={() => setCurrentPage('Home')}>Home</button>
-        <button onClick={() => setCurrentPage('About')}>About</button>
-        <button onClick={() => setCurrentPage('Portfolio')}>Portfolio</button>
-        <button onClick={() => setCurrentPage('Contact')}>Contact</button>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/portfolio">Portfolio</Link>
+        <Link to="/contact">Contact</Link>
       </div>
     </div>
   );
