@@ -7,7 +7,7 @@ const NavBar = () => {
       : 'hover:text-blue-600 rounded-lg px-4 py-2 transition';
 
   return (
-    <nav className="w-full bg-gray-900 text-white">
+    <nav className="w-full bg-gray-900 text-white fixed">
       <div className="flex items-center justify-between py-4 px-24">
         <div>
           <h3 className="w-min font-Montserrat text-3xl font-bold text-blue-300 leading-7">
