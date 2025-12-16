@@ -7,10 +7,12 @@ import PortfolioPage from './pages/PortfolioPage.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
 import NavBar from './components/UI/NavBar.jsx';
 import Footer from './components/UI/Footer.jsx';
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <NavBar />
       <div className="pt-24">
         <Routes>
