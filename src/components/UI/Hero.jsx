@@ -12,7 +12,7 @@ const Hero = () => {
         <h1 className="mb-4 text-4xl font-bold tracking-tight text-gray-100 sm:text-5xl">
           Hi, I’m Josh.
           <br />
-          Fullstack Web Developer.
+          Frontend Web Developer.
         </h1>
 
         <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-300">
