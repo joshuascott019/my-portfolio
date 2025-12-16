@@ -1,4 +1,42 @@
+import { Link } from 'react-router-dom';
+
 const Hero = () => {
-  return <div>Hero</div>;
+  return (
+    <section
+      className="flex min-h-[80vh] items-center bg-gray-50 px-6 bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/images/HeroBanner.png')",
+      }}
+    >
+      <div className="mx-auto max-w-4xl text-left">
+        <h1 className="mb-4 text-4xl font-bold tracking-tight text-gray-100 sm:text-5xl">
+          Hi, I’m Josh.
+          <br />
+          Fullstack Web Developer.
+        </h1>
+
+        <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-300">
+          I build fast, accessible web apps with React, Tailwind, and modern
+          JavaScript.
+        </p>
+
+        <div className="flex flex-col gap-4 sm:flex-row">
+          <Link
+            to="/portfolio"
+            className="rounded-md bg-blue-600 px-6 py-3 text-white hover:bg-blue-700"
+          >
+            View Projects
+          </Link>
+          {/* <a
+            href="/contact"
+            className="rounded-md border border-gray-300 px-6 py-3 text-gray-700 hover:bg-gray-100"
+          >
+            Contact Me
+          </a> */}
+        </div>
+      </div>
+    </section>
+  );
 };
+
 export default Hero;
