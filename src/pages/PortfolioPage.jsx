@@ -1,10 +1,16 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import CardList from '../components/CardList.jsx';
 import projects from '../data/projects.json';
 
 const PortfolioPage = () => {
   const [sortBy, setSortBy] = useState('newest');
   const [activeTags, setActiveTags] = useState([]);
+  const PAGE_SIZE = 9;
+  const [currentPage, setCurrentPage] = useState(1);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [sortBy, activeTags]);
 
   const visibleProjects = useMemo(() => {
     let filtered = [...projects];
@@ -37,6 +43,14 @@ const PortfolioPage = () => {
     });
     return Array.from(tagSet).sort();
   }, []);
+
+  const totalPages = Math.ceil(visibleProjects.length / PAGE_SIZE);
+
+  const paginatedProjects = useMemo(() => {
+    const start = (currentPage - 1) * PAGE_SIZE;
+    const end = start + PAGE_SIZE;
+    return visibleProjects.slice(start, end);
+  }, [visibleProjects, currentPage]);
 
   return (
     <section className="bg-white px-4 py-16">
@@ -84,7 +98,45 @@ const PortfolioPage = () => {
           })}
         </div>
 
-        <CardList projects={visibleProjects} />
+        <CardList projects={paginatedProjects} />
+        {totalPages > 1 && (
+          <nav className="mt-10 flex items-center justify-center gap-2">
+            <button
+              onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+              disabled={currentPage === 1}
+              className="rounded px-3 py-1 text-sm disabled:opacity-40"
+            >
+              Prev
+            </button>
+
+            {/* DESKTOP PAGE NUMBERS */}
+            <div className="hidden sm:flex gap-1">
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                (page) => (
+                  <button
+                    key={page}
+                    onClick={() => setCurrentPage(page)}
+                    className={`rounded px-3 py-1 text-sm ${
+                      page === currentPage
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-gray-100 hover:bg-gray-200'
+                    }`}
+                  >
+                    {page}
+                  </button>
+                )
+              )}
+            </div>
+
+            <button
+              onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
+              disabled={currentPage === totalPages}
+              className="rounded px-3 py-1 text-sm disabled:opacity-40"
+            >
+              Next
+            </button>
+          </nav>
+        )}
       </div>
     </section>
   );
