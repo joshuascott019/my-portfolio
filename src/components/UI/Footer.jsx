@@ -15,22 +15,22 @@ const Footer = () => {
           <Link to="/contact" className="hover:underline">
             Contact
           </Link>
-          <Link
+          <a
             href="https://github.com/joshuascott019"
             target="_blank"
             rel="noreferrer"
             className="hover:underline"
           >
             GitHub
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://www.linkedin.com/in/joshua-scott-295a3b265/"
             target="_blank"
             rel="noreferrer"
             className="hover:underline"
           >
             LinkedIn
-          </Link>
+          </a>
         </nav>
       </div>
     </footer>
