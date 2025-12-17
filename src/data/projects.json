@@ -1,5 +1,21 @@
 [
   {
+    "id": 0,
+    "name": "Project Placeholder",
+    "slug": "project-placeholder",
+    "category": "frontend",
+    "type": "practice",
+    "img": "/images/project-placeholder-image.jpg",
+    "links": {
+      "live": "",
+      "repo": ""
+    },
+    "date": "2023-01-01",
+    "tags": ["React", "Tailwind CSS", "JavaScript"],
+    "short": "Project description goes here.",
+    "featured": false
+  },
+  {
     "id": 1,
     "name": "VitóriaSoft Website",
     "slug": "vitoriasoft-website",
@@ -29,6 +45,6 @@
     "date": "2024-09-11",
     "tags": ["React", "Tailwind CSS"],
     "short": "Dashboard app with project management features, and todo list.",
-    "featured": true
+    "featured": false
   }
 ]
