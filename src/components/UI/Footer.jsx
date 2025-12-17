@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="w-full bg-gray-900 text-gray-100">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-6 sm:flex-row">
         <p className="text-sm">
-          © {new Date().getFullYear()} Josh — Fullstack Web Developer
+          © {new Date().getFullYear()} Josh — Frontend Web Developer
         </p>
 
         <nav className="flex gap-4 text-sm">
