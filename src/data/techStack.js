@@ -37,17 +37,17 @@ export const primaryStack = [
   {
     name: 'React',
     icon: FaReact,
-    start: '2023-02',
+    start: '2024-07',
   },
   {
     name: 'JavaScript',
     icon: SiJavascript,
-    start: '2023-01',
+    start: '2022-10',
   },
   {
     name: 'Tailwind CSS',
     icon: SiTailwindcss,
-    start: '2023-03',
+    start: '2024-07',
   },
 ];
 
