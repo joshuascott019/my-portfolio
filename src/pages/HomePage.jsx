@@ -3,7 +3,7 @@ import {
   expandingSkillset,
   tools,
   getTenure,
-} from '../data/techstack.js';
+} from '../data/techStack.js';
 import Hero from '../components/UI/Hero.jsx';
 
 const HomePage = () => {
