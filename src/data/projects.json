@@ -1,162 +1,34 @@
 [
   {
     "id": 1,
-    "name": "Developer Portfolio",
-    "slug": "developer-portfolio",
+    "name": "VitóriaSoft Website",
+    "slug": "vitoriasoft-website",
     "category": "frontend",
-    "type": "personal",
-    "img": "/images/project-portfolio.png",
+    "type": "freelance",
+    "img": "/images/VitóriaSoft.png",
     "links": {
-      "live": "https://example.com/portfolio",
-      "repo": "https://github.com/example/portfolio"
+      "live": "https://vitoriasoftwebsite.netlify.app/",
+      "repo": ""
     },
-    "date": "2025-11-01",
-    "tags": ["React", "Tailwind", "Vite"],
-    "short": "A responsive developer portfolio showcasing projects and skills.",
+    "date": "2024-12-13",
+    "tags": ["JavaScript"],
+    "short": "Production website built for a real client with a focus on clarity, responsiveness, and maintainability.",
     "featured": true
   },
   {
     "id": 2,
-    "name": "Task Tracker App",
-    "slug": "task-tracker-app",
-    "category": "frontend",
-    "type": "personal",
-    "img": "/images/project-tasks.png",
-    "links": {
-      "live": "https://example.com/tasks",
-      "repo": "https://github.com/example/task-tracker"
-    },
-    "date": "2025-10-12",
-    "tags": ["React", "State Management", "Accessibility"],
-    "short": "A simple task tracking app focused on keyboard and screen reader support.",
-    "featured": false
-  },
-  {
-    "id": 3,
-    "name": "REST API Boilerplate",
-    "slug": "rest-api-boilerplate",
-    "category": "backend",
-    "type": "personal",
-    "img": "/images/project-api.png",
-    "links": {
-      "live": "",
-      "repo": "https://github.com/example/rest-api-boilerplate"
-    },
-    "date": "2025-09-28",
-    "tags": ["Node.js", "Express", "REST"],
-    "short": "Reusable Express API boilerplate with structured routing and middleware.",
-    "featured": false
-  },
-  {
-    "id": 4,
-    "name": "E-commerce Product Page",
-    "slug": "ecommerce-product-page",
+    "name": "Dashboard App",
+    "slug": "dashboard-app",
     "category": "frontend",
     "type": "practice",
-    "img": "/images/project-ecommerce.png",
+    "img": "/images/Dashboard App.png",
     "links": {
-      "live": "https://example.com/product",
-      "repo": "https://github.com/example/ecommerce-ui"
+      "live": "https://joshsdashboadapp.netlify.app/",
+      "repo": "https://github.com/joshuascott019/my-dashboard/tree/main"
     },
-    "date": "2025-09-10",
-    "tags": ["HTML", "CSS", "JavaScript"],
-    "short": "Static product page focused on layout, responsiveness, and UI polish.",
-    "featured": false
-  },
-  {
-    "id": 5,
-    "name": "Blog Platform",
-    "slug": "blog-platform",
-    "category": "fullstack",
-    "type": "personal",
-    "img": "/images/project-blog.png",
-    "links": {
-      "live": "https://example.com/blog",
-      "repo": "https://github.com/example/blog-platform"
-    },
-    "date": "2025-08-22",
-    "tags": ["React", "Node.js", "PostgreSQL"],
-    "short": "Fullstack blog platform with authentication and CRUD functionality.",
-    "featured": true
-  },
-  {
-    "id": 6,
-    "name": "Weather Dashboard",
-    "slug": "weather-dashboard",
-    "category": "frontend",
-    "type": "practice",
-    "img": "/images/project-weather.png",
-    "links": {
-      "live": "https://example.com/weather",
-      "repo": "https://github.com/example/weather-dashboard"
-    },
-    "date": "2025-08-01",
-    "tags": ["API", "JavaScript", "UX"],
-    "short": "Weather dashboard consuming a third-party API with dynamic UI updates.",
-    "featured": false
-  },
-  {
-    "id": 7,
-    "name": "Authentication Service",
-    "slug": "authentication-service",
-    "category": "backend",
-    "type": "personal",
-    "img": "/images/project-auth.png",
-    "links": {
-      "live": "",
-      "repo": "https://github.com/example/auth-service"
-    },
-    "date": "2025-07-15",
-    "tags": ["Node.js", "JWT", "Security"],
-    "short": "Backend authentication service using JWT and role-based access control.",
-    "featured": false
-  },
-  {
-    "id": 8,
-    "name": "Landing Page Redesign",
-    "slug": "landing-page-redesign",
-    "category": "frontend",
-    "type": "freelance",
-    "img": "/images/project-landing.png",
-    "links": {
-      "live": "https://example.com/landing",
-      "repo": ""
-    },
-    "date": "2025-06-30",
-    "tags": ["UI Design", "Tailwind", "Responsive"],
-    "short": "Marketing landing page redesign focused on clarity and conversion.",
-    "featured": false
-  },
-  {
-    "id": 9,
-    "name": "Form Validation Library",
-    "slug": "form-validation-library",
-    "category": "other",
-    "type": "open-source",
-    "img": "/images/project-forms.png",
-    "links": {
-      "live": "",
-      "repo": "https://github.com/example/form-validation"
-    },
-    "date": "2025-06-05",
-    "tags": ["JavaScript", "Validation", "Open Source"],
-    "short": "Lightweight form validation utility with minimal configuration.",
-    "featured": false
-  },
-  {
-    "id": 10,
-    "name": "Admin Dashboard",
-    "slug": "admin-dashboard",
-    "category": "fullstack",
-    "type": "practice",
-    "img": "/images/project-dashboard.png",
-    "links": {
-      "live": "https://example.com/dashboard",
-      "repo": "https://github.com/example/admin-dashboard"
-    },
-    "date": "2025-05-18",
-    "tags": ["React", "Charts", "Role Management"],
-    "short": "Admin dashboard with charts, protected routes, and role-based views.",
+    "date": "2024-09-11",
+    "tags": ["React", "Tailwind CSS"],
+    "short": "Dashboard app with project management features, and todo list.",
     "featured": true
   }
 ]
