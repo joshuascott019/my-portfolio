@@ -1,3 +1,5 @@
+import Link from 'react-router-dom';
+
 const Footer = () => {
   return (
     <footer className="w-full bg-gray-900 text-gray-100">
@@ -7,28 +9,28 @@ const Footer = () => {
         </p>
 
         <nav className="flex gap-4 text-sm">
-          <a href="/projects" className="hover:underline">
+          <Link to="/projects" className="hover:underline">
             Projects
-          </a>
-          <a href="/contact" className="hover:underline">
+          </Link>
+          <Link to="/contact" className="hover:underline">
             Contact
-          </a>
-          <a
-            href="https://github.com/your-username"
+          </Link>
+          <Link
+            href="https://github.com/joshuascott019"
             target="_blank"
             rel="noreferrer"
             className="hover:underline"
           >
             GitHub
-          </a>
-          <a
-            href="https://linkedin.com/in/your-username"
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/joshua-scott-295a3b265/"
             target="_blank"
             rel="noreferrer"
             className="hover:underline"
           >
             LinkedIn
-          </a>
+          </Link>
         </nav>
       </div>
     </footer>
