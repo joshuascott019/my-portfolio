@@ -1,6 +1,9 @@
 const Card = ({ project }) => {
   const { name, img, date, tags, links, short } = project;
 
+  const [year, month, day] = date.split('-');
+  const safeDate = new Date(year, month - 1, day);
+
   return (
     <article className="flex flex-col overflow-hidden rounded-xl border bg-white shadow-sm">
       {/* IMAGE */}
@@ -20,7 +23,7 @@ const Card = ({ project }) => {
         <header>
           <h3 className="text-lg font-semibold">{name}</h3>
           <p className="text-sm text-gray-500">
-            {new Date(date).toLocaleDateString()}
+            {safeDate.toLocaleDateString()}
           </p>
         </header>
 
