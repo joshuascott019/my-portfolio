@@ -4,24 +4,39 @@ import projects from '../data/projects.json';
 
 const PortfolioPage = () => {
   const [sortBy, setSortBy] = useState('newest');
+  const [activeTags, setActiveTags] = useState([]);
 
-  const sortedProjects = useMemo(() => {
-    const copy = [...projects];
+  const visibleProjects = useMemo(() => {
+    let filtered = [...projects];
+
+    if (activeTags.length > 0) {
+      filtered = filtered.filter((project) =>
+        project.tags.some((tag) => activeTags.includes(tag))
+      );
+    }
 
     switch (sortBy) {
       case 'oldest':
-        return copy.sort((a, b) => new Date(a.date) - new Date(b.date));
+        return filtered.sort((a, b) => new Date(a.date) - new Date(b.date));
       case 'az':
-        return copy.sort((a, b) => a.name.localeCompare(b.name));
+        return filtered.sort((a, b) => a.name.localeCompare(b.name));
       case 'za':
-        return copy.sort((a, b) => b.name.localeCompare(a.name));
+        return filtered.sort((a, b) => b.name.localeCompare(a.name));
       case 'featured':
-        return copy.sort((a, b) => Number(b.featured) - Number(a.featured));
+        return filtered.sort((a, b) => Number(b.featured) - Number(a.featured));
       case 'newest':
       default:
-        return copy.sort((a, b) => new Date(b.date) - new Date(a.date));
+        return filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
     }
-  }, [sortBy]);
+  }, [sortBy, activeTags]);
+
+  const allTags = useMemo(() => {
+    const tagSet = new Set();
+    projects.forEach((project) => {
+      project.tags.forEach((tag) => tagSet.add(tag));
+    });
+    return Array.from(tagSet).sort();
+  }, []);
 
   return (
     <section className="bg-white px-4 py-16">
@@ -44,7 +59,32 @@ const PortfolioPage = () => {
           </label>
         </div>
 
-        <CardList projects={sortedProjects} />
+        <div className="mb-6 flex flex-wrap gap-2">
+          {allTags.map((tag) => {
+            const isActive = activeTags.includes(tag);
+
+            return (
+              <button
+                key={tag}
+                onClick={() =>
+                  setActiveTags((prev) =>
+                    isActive ? prev.filter((t) => t !== tag) : [...prev, tag]
+                  )
+                }
+                className={`rounded-full px-3 py-1 text-xs font-medium transition
+          ${
+            isActive
+              ? 'bg-blue-600 text-white'
+              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+          }`}
+              >
+                {tag}
+              </button>
+            );
+          })}
+        </div>
+
+        <CardList projects={visibleProjects} />
       </div>
     </section>
   );
