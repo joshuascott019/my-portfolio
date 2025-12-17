@@ -9,7 +9,13 @@ const PortfolioPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
-    setCurrentPage(1);
+    const updateCurrentPage = () => {
+      setCurrentPage(1);
+    };
+    updateCurrentPage();
+    return () => {
+      setCurrentPage(null);
+    };
   }, [sortBy, activeTags]);
 
   const visibleProjects = useMemo(() => {
