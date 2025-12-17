@@ -8,7 +8,7 @@ const Hero = () => {
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
         loading="eager"
-        fetchpriority="high"
+        fetchPriority="high"
         decoding="async"
       />
       <div className="absolute inset-0 bg-black/40" />
