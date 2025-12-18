@@ -45,6 +45,86 @@
     "date": "2024-09-11",
     "tags": ["React", "Tailwind CSS"],
     "short": "Dashboard app with project management features, and todo list.",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Password Generator",
+    "slug": "password-generator",
+    "category": "frontend",
+    "type": "practice",
+    "img": "/images/Password Generator.png",
+    "links": {
+      "live": "https://joshpwgen.netlify.app/",
+      "repo": "https://github.com/joshuascott019/password-generator"
+    },
+    "date": "2025-11-10",
+    "tags": ["React", "Tailwind CSS"],
+    "short": "App for generating passwords with a variety of conditions individually or in bulk.",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "name": "Pomodoro Timer",
+    "slug": "pomodoro-timer",
+    "category": "frontend",
+    "type": "practice",
+    "img": "/images/Pomodoro Timer.png",
+    "links": {
+      "live": "https://joshs019-pomodoro-timer.netlify.app/",
+      "repo": "https://github.com/joshuascott019/my-pomodoro-timer"
+    },
+    "date": "2025-08-27",
+    "tags": ["React", "Tailwind CSS"],
+    "short": "A customizable pomodoro timer for study sessions.",
     "featured": false
+  },
+  {
+    "id": 5,
+    "name": "Flashcard App",
+    "slug": "flashcard-app",
+    "category": "frontend",
+    "type": "practice",
+    "img": "/images/Flashcard App.png",
+    "links": {
+      "live": "https://joshs019flashcardapp.netlify.app/",
+      "repo": "https://github.com/joshuascott019/flashcard-app"
+    },
+    "date": "2025-05-20",
+    "tags": ["React", "Tailwind CSS"],
+    "short": "A customizable pomodoro timer for study sessions.",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "Finance App",
+    "slug": "finance-app",
+    "category": "frontend",
+    "type": "practice",
+    "img": "/images/Finance App.png",
+    "links": {
+      "live": "https://joshsfinanceapp.netlify.app/",
+      "repo": "https://github.com/joshuascott019/jm-finance-app"
+    },
+    "date": "2025-11-19",
+    "tags": ["React", "Tailwind CSS"],
+    "short": "An app for tracking your finances. Includes a budget and expense tracker.",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "name": "Bridal Party Manual",
+    "slug": "bridal-party-manual",
+    "category": "frontend",
+    "type": "freelance",
+    "img": "/images/Bridal Party Manual.png",
+    "links": {
+      "live": "https://jmmanualdospadrinhos.netlify.app/",
+      "repo": ""
+    },
+    "date": "2024-12-31",
+    "tags": ["React", "Tailwind CSS"],
+    "short": "A bridal party manual, in Portuguese, for a wedding.",
+    "featured": true
   }
 ]
