@@ -1,11 +1,17 @@
 const Card = ({ project }) => {
-  const { name, img, date, tags, links, short } = project;
-
+  const { name, img, date, tags, links, short, priority } = project;
+  const isFeatured = priority === 1;
   const [year, month, day] = date.split('-');
   const safeDate = new Date(year, month - 1, day);
 
   return (
-    <article className="flex flex-col overflow-hidden rounded-xl border bg-white shadow-sm">
+    <article className="relative flex flex-col overflow-hidden rounded-xl border bg-white shadow-sm">
+      {isFeatured && (
+        <span className="absolute left-3 top-3 z-10 rounded-md bg-black px-2 py-1 text-xs font-semibold text-white">
+          Featured
+        </span>
+      )}
+
       {/* IMAGE */}
       <div className="aspect-video overflow-hidden bg-gray-100">
         {img && (

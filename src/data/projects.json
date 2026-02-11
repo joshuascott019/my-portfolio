@@ -29,7 +29,7 @@
     },
     "date": "2024-12-13",
     "tags": ["JavaScript"],
-    "short": "Production website built for a real client with a focus on clarity, responsiveness, and maintainability.",
+    "short": "Production website developed for a real client, emphasizing responsive layout, clean JavaScript structure, and maintainable code organization for long-term content updates.",
     "priority": 3,
     "hidden": false
   },
@@ -46,7 +46,7 @@
     },
     "date": "2024-09-11",
     "tags": ["React", "Tailwind CSS"],
-    "short": "Dashboard app with project management features, and todo list.",
+    "short": "React-based dashboard application featuring modular components, controlled form inputs, and dynamic task management logic to support project tracking and UI-driven state updates.",
     "priority": 2,
     "hidden": false
   },
@@ -63,7 +63,7 @@
     },
     "date": "2025-11-10",
     "tags": ["React", "Tailwind CSS"],
-    "short": "App for generating passwords with a variety of conditions individually or in bulk.",
+    "short": "Browser-based password generator implementing configurable character rules and randomized logic, with React state controlling length, criteria selection, and dynamic output rendering.",
     "priority": 6,
     "hidden": false
   },
@@ -80,7 +80,7 @@
     },
     "date": "2025-08-27",
     "tags": ["React", "Tailwind CSS"],
-    "short": "A customizable pomodoro timer for study sessions.",
+    "short": "Pomodoro-style timer application built with React, implementing time-based state updates and interval management to ensure accurate session tracking and user feedback.",
     "priority": 5,
     "hidden": false
   },
@@ -97,7 +97,7 @@
     },
     "date": "2025-05-20",
     "tags": ["React", "Tailwind CSS"],
-    "short": "A customizable pomodoro timer for study sessions.",
+    "short": "Interactive flashcard application built with React, using conditional rendering and controlled state transitions to manage card flipping, progression flow, and reset behavior.",
     "priority": 4,
     "hidden": false
   },
@@ -114,7 +114,7 @@
     },
     "date": "2025-11-19",
     "tags": ["React", "Tailwind CSS"],
-    "short": "(WIP) - An app for tracking your finances. Includes a budget and expense tracker.",
+    "short": "WIP personal finance application built with React, implementing component-based architecture and structured state management to handle dynamic budget and expense data, with layout designed for future backend integration.",
     "priority": 1,
     "hidden": false
   },
@@ -131,7 +131,7 @@
     },
     "date": "2024-12-31",
     "tags": ["React", "Tailwind CSS"],
-    "short": "A bridal party manual, in Portuguese, for a wedding.",
+    "short": "Multilingual informational site built with React and Tailwind CSS for a real-world event, focusing on responsive layout, structured content presentation, and accessibility across devices.",
     "priority": 0,
     "hidden": false
   }
