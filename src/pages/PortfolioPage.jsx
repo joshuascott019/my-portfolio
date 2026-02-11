@@ -19,11 +19,12 @@ const PortfolioPage = () => {
   }, [sortBy, activeTags]);
 
   const visibleProjects = useMemo(() => {
-    let filtered = [...projects];
+    let activeProjects = projects.filter((project) => !project.hidden);
+    let filtered = [...activeProjects];
 
     if (activeTags.length > 0) {
       filtered = filtered.filter((project) =>
-        project.tags.some((tag) => activeTags.includes(tag))
+        project.tags.some((tag) => activeTags.includes(tag)),
       );
     }
 
@@ -88,7 +89,7 @@ const PortfolioPage = () => {
                 key={tag}
                 onClick={() =>
                   setActiveTags((prev) =>
-                    isActive ? prev.filter((t) => t !== tag) : [...prev, tag]
+                    isActive ? prev.filter((t) => t !== tag) : [...prev, tag],
                   )
                 }
                 className={`rounded-full px-3 py-1 text-xs font-medium transition
@@ -130,7 +131,7 @@ const PortfolioPage = () => {
                   >
                     {page}
                   </button>
-                )
+                ),
               )}
             </div>
 

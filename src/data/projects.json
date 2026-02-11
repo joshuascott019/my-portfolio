@@ -13,7 +13,8 @@
     "date": "2023-01-01",
     "tags": ["React", "Tailwind CSS", "JavaScript"],
     "short": "Project description goes here.",
-    "featured": false
+    "featured": false,
+    "hidden": true
   },
   {
     "id": 1,
@@ -29,7 +30,8 @@
     "date": "2024-12-13",
     "tags": ["JavaScript"],
     "short": "Production website built for a real client with a focus on clarity, responsiveness, and maintainability.",
-    "featured": true
+    "featured": true,
+    "hidden": false
   },
   {
     "id": 2,
@@ -45,7 +47,8 @@
     "date": "2024-09-11",
     "tags": ["React", "Tailwind CSS"],
     "short": "Dashboard app with project management features, and todo list.",
-    "featured": true
+    "featured": true,
+    "hidden": false
   },
   {
     "id": 3,
@@ -61,7 +64,8 @@
     "date": "2025-11-10",
     "tags": ["React", "Tailwind CSS"],
     "short": "App for generating passwords with a variety of conditions individually or in bulk.",
-    "featured": true
+    "featured": true,
+    "hidden": false
   },
   {
     "id": 4,
@@ -77,7 +81,8 @@
     "date": "2025-08-27",
     "tags": ["React", "Tailwind CSS"],
     "short": "A customizable pomodoro timer for study sessions.",
-    "featured": false
+    "featured": false,
+    "hidden": false
   },
   {
     "id": 5,
@@ -93,7 +98,8 @@
     "date": "2025-05-20",
     "tags": ["React", "Tailwind CSS"],
     "short": "A customizable pomodoro timer for study sessions.",
-    "featured": false
+    "featured": false,
+    "hidden": false
   },
   {
     "id": 6,
@@ -109,7 +115,8 @@
     "date": "2025-11-19",
     "tags": ["React", "Tailwind CSS"],
     "short": "(WIP) - An app for tracking your finances. Includes a budget and expense tracker.",
-    "featured": false
+    "featured": false,
+    "hidden": false
   },
   {
     "id": 7,
@@ -125,6 +132,7 @@
     "date": "2024-12-31",
     "tags": ["React", "Tailwind CSS"],
     "short": "A bridal party manual, in Portuguese, for a wedding.",
-    "featured": true
+    "featured": true,
+    "hidden": false
   }
 ]
