@@ -19,8 +19,8 @@ const Hero = () => {
           Frontend Web Developer.
         </h1>
         <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-300">
-          I build fast, accessible web apps with React, Tailwind, and modern
-          JavaScript.
+          I build and deploy fast, accessible web apps with React, Tailwind, and
+          modern JavaScript.
         </p>
         <div className="flex flex-col gap-4 sm:flex-row">
           <Link
@@ -29,12 +29,6 @@ const Hero = () => {
           >
             View Projects
           </Link>
-          {/* <a
-            href="/contact"
-            className="rounded-md border border-gray-300 px-6 py-3 text-gray-700 hover:bg-gray-100"
-          >
-            Contact Me
-          </a> */}
         </div>
       </div>
     </section>
