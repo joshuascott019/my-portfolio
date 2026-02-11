@@ -36,7 +36,15 @@ const PortfolioPage = () => {
       case 'za':
         return filtered.sort((a, b) => b.name.localeCompare(a.name));
       case 'featured':
-        return filtered.sort((a, b) => Number(b.featured) - Number(a.featured));
+        return filtered.sort((a, b) => {
+          // Projects with priority > 0 come first
+          if (a.priority === 0 && b.priority === 0) return 0;
+          if (a.priority === 0) return 1;
+          if (b.priority === 0) return -1;
+
+          // Both have priority > 0 → sort ascending (1 first)
+          return a.priority - b.priority;
+        });
       case 'newest':
       default:
         return filtered.sort((a, b) => new Date(b.date) - new Date(a.date));

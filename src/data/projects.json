@@ -13,7 +13,7 @@
     "date": "2023-01-01",
     "tags": ["React", "Tailwind CSS", "JavaScript"],
     "short": "Project description goes here.",
-    "featured": false,
+    "priority": 0,
     "hidden": true
   },
   {
@@ -30,7 +30,7 @@
     "date": "2024-12-13",
     "tags": ["JavaScript"],
     "short": "Production website built for a real client with a focus on clarity, responsiveness, and maintainability.",
-    "featured": true,
+    "priority": 3,
     "hidden": false
   },
   {
@@ -47,7 +47,7 @@
     "date": "2024-09-11",
     "tags": ["React", "Tailwind CSS"],
     "short": "Dashboard app with project management features, and todo list.",
-    "featured": true,
+    "priority": 2,
     "hidden": false
   },
   {
@@ -64,7 +64,7 @@
     "date": "2025-11-10",
     "tags": ["React", "Tailwind CSS"],
     "short": "App for generating passwords with a variety of conditions individually or in bulk.",
-    "featured": true,
+    "priority": 6,
     "hidden": false
   },
   {
@@ -81,7 +81,7 @@
     "date": "2025-08-27",
     "tags": ["React", "Tailwind CSS"],
     "short": "A customizable pomodoro timer for study sessions.",
-    "featured": false,
+    "priority": 5,
     "hidden": false
   },
   {
@@ -98,7 +98,7 @@
     "date": "2025-05-20",
     "tags": ["React", "Tailwind CSS"],
     "short": "A customizable pomodoro timer for study sessions.",
-    "featured": false,
+    "priority": 4,
     "hidden": false
   },
   {
@@ -115,7 +115,7 @@
     "date": "2025-11-19",
     "tags": ["React", "Tailwind CSS"],
     "short": "(WIP) - An app for tracking your finances. Includes a budget and expense tracker.",
-    "featured": false,
+    "priority": 1,
     "hidden": false
   },
   {
@@ -132,7 +132,7 @@
     "date": "2024-12-31",
     "tags": ["React", "Tailwind CSS"],
     "short": "A bridal party manual, in Portuguese, for a wedding.",
-    "featured": true,
+    "priority": 0,
     "hidden": false
   }
 ]
