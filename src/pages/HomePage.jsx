@@ -19,11 +19,14 @@ const HomePage = () => {
           </h2>
 
           <p className="max-w-3xl text-gray-500">
-            I’m a frontend-focused web developer with strong experience building
-            responsive, accessible interfaces using React, Tailwind, and modern
-            JavaScript. I’m currently expanding into fullstack development with
-            Node.js and PostgreSQL, with a long-term interest in application
-            security and cybersecurity principles.
+            I'm a frontend web developer focused on building responsive,
+            accessible web applications with React and Tailwind CSS. My work
+            emphasizes clean UI structure, component-based architecture, and
+            maintainable code. I've built multiple production-style projects and
+            am expanding into backend development with Node.js, Express, and
+            PostgreSQL. I'm currently seeking opportunities where I can
+            contribute strong frontend execution while continuing to grow across
+            the stack.
           </p>
         </div>
       </section>
