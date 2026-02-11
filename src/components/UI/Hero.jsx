@@ -19,8 +19,8 @@ const Hero = () => {
           Frontend Web Developer.
         </h1>
         <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-300">
-          I build and deploy fast, accessible web apps with React, Tailwind, and
-          modern JavaScript.
+          I build and deploy fast and responsive web interfaces with React,
+          Tailwind, and modern JavaScript.
         </p>
         <div className="flex flex-col gap-4 sm:flex-row">
           <Link
