@@ -3,7 +3,7 @@ import CardList from '../components/CardList.jsx';
 import projects from '../data/projects.json';
 
 const PortfolioPage = () => {
-  const [sortBy, setSortBy] = useState('newest');
+  const [sortBy, setSortBy] = useState('featured');
   const [activeTags, setActiveTags] = useState([]);
   const PAGE_SIZE = 9;
   const [currentPage, setCurrentPage] = useState(1);
