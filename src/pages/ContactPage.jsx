@@ -7,8 +7,8 @@ const ContactPage = () => {
         <h1 className="text-3xl font-semibold text-gray-900">Contact</h1>
 
         <p className="mt-4 text-gray-700">
-          Have a question, project idea, or opportunity? Use the form below and
-          I’ll get back to you.
+          Interested in working together or have a question about one of my
+          projects? Send a message below.
         </p>
 
         <div className="mt-10">
